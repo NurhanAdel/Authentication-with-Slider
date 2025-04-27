@@ -75,7 +75,7 @@ logOutLink.addEventListener("click", function () {
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // SILDER EVENTS
 photosContainer.addEventListener("click", function (e) {
-  if (e.target.closest(".welcome-content")) {
+  if (e.target.closest("img")) {
     showSlider();
     getCurrentImage(e);
   }
