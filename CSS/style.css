@@ -1,0 +1,375 @@
+/* ^ D R Y CONCEPT | */
+:root {
+  --main-color: #ffa55d;
+  --focus-color: #e8883a;
+  --secondery-color: #f5eedd;
+}
+
+.pop-up {
+  border: 1px solid var(--focus-color);
+  border-radius: 0.3125rem;
+}
+
+.is-valid,
+.is-invalid {
+  border-color: var(--main-color) !important;
+}
+
+/*  ____________________________________________________________ */
+body {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+a,
+span {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0rem;
+}
+
+input {
+  display: block;
+}
+
+.signtaure,
+.welcome-page .signtaure {
+  font-weight: 100;
+  letter-spacing: 0.3125rem;
+  text-transform: capitalize;
+  color: var(--secondery-color);
+  transform: rotate(270deg);
+  position: fixed;
+  right: -33%;
+  opacity: 0.6;
+}
+
+/* ~ INDEX-PAGE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* * TITLE-PART | S T A  R T */
+main.index-page {
+  height: 100%;
+  background-image: linear-gradient(#000000a7, #000000a7),
+    url("../IMGS/index-bg.avif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  isolation: isolate;
+}
+
+main.index-page::before,
+main.index-page::after {
+  content: " ";
+  height: 0.0625rem;
+  background-color: var(--main-color);
+  position: absolute;
+  z-index: -1;
+}
+
+main.index-page::before {
+  width: 100%;
+  right: 30%;
+  top: 17%;
+}
+
+main.index-page::after {
+  width: 60%;
+  bottom: 2.5rem;
+  left: 40%;
+}
+
+.title ul {
+  font-size: 0.5rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.title {
+  width: 70%;
+  margin-inline: auto;
+  margin-top: 2.5rem;
+}
+
+.title h1 {
+  font-size: 2.5rem;
+  font-family: "Saira Stencil One", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.4375rem;
+}
+
+.title > p {
+  text-align: justify;
+  margin: 1.5625rem 0rem 3.125rem;
+}
+
+.title div {
+  display: none;
+}
+
+.title div p {
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 0rem;
+}
+
+.title div i {
+  font-size: 0.8125rem;
+  color: var(--secondery-color);
+}
+
+/* * TITLE-PART | E N D */
+/* * REGISTRATION-PART | S T A R T */
+.form-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registration {
+  backdrop-filter: blur(0.3125rem);
+  border-radius: 1.25rem;
+  box-shadow: 3px 3px 10px #0000001f;
+  padding: 3.125rem;
+  border-top: 1px solid var(--main-color);
+}
+
+.registration h2 {
+  color: var(--secondery-color);
+  font-size: 1.125rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.registration h2 span {
+  letter-spacing: 0.625rem;
+}
+
+.registration p {
+  width: 60%;
+  font-size: 0.8125rem;
+  font-weight: 200;
+  margin-bottom: 1.875rem;
+}
+
+.registration input {
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  margin-bottom: 1.25rem;
+}
+
+.registration input::placeholder {
+  color: var(--secondery-color);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1875rem;
+}
+
+.registration .form-control:focus {
+  border-color: var(--main-color);
+  box-shadow: none;
+  background-color: transparent;
+  color: var(--secondery-color);
+  font-weight: 300;
+}
+
+.registration .message {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--focus-color);
+}
+
+form button,
+form a,
+.welcome a {
+  width: 100%;
+  background-color: var(--main-color);
+  color: var(--secondery-color);
+  text-transform: uppercase;
+  border: none;
+  padding: 0.3125rem;
+  border-radius: 0.375rem;
+  font-weight: 900;
+  margin-top: 0.3125rem;
+  transition: background-color 500ms, letter-spacing 500ms;
+}
+
+form button:hover,
+form a:hover,
+.welcome a:hover {
+  background-color: var(--focus-color);
+  letter-spacing: 0.1875rem;
+  cursor: pointer;
+}
+
+.registration div {
+  font-size: 0.8125rem;
+}
+
+.registration div button {
+  background-color: transparent;
+  border: none;
+  color: var(--secondery-color);
+  font-weight: 800;
+}
+
+/* * REGISTRATION-PART | E N D *
+/* * SIGNATURE | S T A R T */
+.signtaure {
+  font-size: 0.625rem;
+  bottom: 33%;
+}
+/* * SIGNATURE | E N D */
+
+/* ^ ____________________________________________________________ */
+/* ~ WELCOME -PAGE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* * WELCOME-CONTENT | S T A R T */
+main.welcome-page {
+  background-image: linear-gradient(#000000c2, #000000c2),
+    url("../IMGS/welcome-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+main.welcome-page .container {
+  width: 80%;
+}
+
+.welcom-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.welcome-title h1 {
+  font-size: 1.25rem;
+}
+
+.welcome-title p {
+  font-size: 0.8125rem;
+  text-align: justify;
+}
+
+.welcome-title span {
+  font-size: 0.625rem;
+  letter-spacing: 0.1875rem;
+  text-transform: uppercase;
+}
+
+.welcome-content img {
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  object-position: top;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.img-info {
+  background-color: var(--focus-color);
+  padding: 0.9375rem;
+  box-shadow: inset 3px 3px 10px #00000083;
+  text-align: center;
+}
+
+.img-info h2 {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1875rem;
+  margin-bottom: 0px;
+}
+
+.img-info h3 {
+  font-size: 0.8125rem;
+  font-weight: 300;
+  margin-top: 0px;
+  text-transform: capitalize;
+}
+
+.img-info p {
+  font-size: 0.8125rem;
+  margin-block: 0.9375rem 0rem;
+}
+/* * WELCOME-CONTENT | E N D */
+/* * WELCOME | S T A R T */
+.welcome {
+  color: var(--secondery-color);
+  backdrop-filter: blur(0.0625rem);
+  border-bottom: 1px solid var(--main-color);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  box-shadow: 3px 3px 10px #0000005d;
+  margin-top: 3.125rem;
+}
+
+.welcome h2 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.625rem;
+}
+
+.welcome h2 span {
+  letter-spacing: 0rem;
+}
+
+.welcome p {
+  font-size: 0.8125rem;
+  margin-top: 0.6875rem;
+}
+/* * WELCOME | E N D */
+/* * SIGNATURE | S T A R T */
+.welcome-page .signtaure {
+  font-size: 0.5rem;
+  top: 65%;
+}
+/* * SIGNATURE | E N D */
+/* * SILDER | S T A R T  */
+.silder {
+  background-color: rgba(0, 0, 0, 0.78);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 85%;
+  left: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container {
+  width: 80%;
+  margin-inline: 0.5rem;
+}
+
+.img-container img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.silder i {
+  font-size: 2rem;
+  color: var(--focus-color);
+  cursor: pointer;
+}
+
+.silder i:first-child {
+  font-size: 1.125rem;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+/* * SILDER | E N D  */

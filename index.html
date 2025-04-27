@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiking Registration |</title>
+    <link rel="shortcut icon" href="IMGS/favicon.jpg" type="image/x-icon" />
+
+    <!-- ^ GOOGLE FONTS | Oswald | Saira Stencil One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Saira+Stencil+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ^ STYLES LINKS | -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/media.css" />
+  </head>
+
+  <body>
+    <main class="index-page">
+      <section>
+        <div class="container">
+          <div class="row text-light g-5">
+            <!-- * TITLE-PART | S T A  R T  -->
+            <div class="col-sm-12 col-md-7">
+              <div class="title mt-5">
+                <ul class="d-flex justify-content-between">
+                  <li>Wander</li>
+                  <li>Breathe</li>
+                  <li>Reconnect</li>
+                </ul>
+                <h1>Hiking</h1>
+
+                <p>
+                  The world is full of trails waiting to be explored — and
+                  Hiking is your gateway to them.
+                </p>
+
+                <div>
+                  <p>Lace up — your next adventure starts here.</p>
+                  <i class="fa-regular fa-compass"></i>
+                </div>
+              </div>
+            </div>
+            <!-- * TITLE-PART | E N D  -->
+            <!-- * REGISTRATION-PART | S T A R T  -->
+            <div class="col-sm-12 col-md-5">
+              <div class="form-container">
+                <div
+                  class="registration d-flex flex-column justify-content-center"
+                >
+                  <h2><span>Ready</span> to hit the trail ?</h2>
+
+                  <p>
+                    Sign in or create an account to unlock access to
+                    breathtaking hiking spots
+                  </p>
+
+                  <form>
+                    <input
+                      type="text"
+                      placeholder="enter your name ..."
+                      name="userName"
+                      class="form-control name-input"
+                      autocomplete="off"
+                    />
+
+                    <input
+                      type="email"
+                      placeholder="enter your email..."
+                      name="userEmail"
+                      class="form-control email-input"
+                      autocomplete="off"
+                    />
+
+                    <input
+                      type="password"
+                      placeholder="enter your password..."
+                      name="userPassword"
+                      class="form-control password-input"
+                    />
+
+                    <div class="message">
+                      <span class="d-none required"
+                        >"All inputs are required."</span
+                      >
+                      <span class="d-none sucessful"
+                        >"Sign-up successful!"</span
+                      >
+                      <span class="d-none exists"
+                        >"account already exists"</span
+                      >
+                      <span class="d-none incorrect"
+                        >"Email or password is incorrect."</span
+                      >
+                    </div>
+
+                    <button type="button" class="sign-up">sign up</button>
+                    <a class="log-in d-none">login</a>
+                  </form>
+
+                  <div class="text-center">
+                    <span>You have an account?</span>
+                    <button>sign in</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- * REGISTRATION-PART | E N D  -->
+          </div>
+        </div>
+      </section>
+      <!-- * SIGNATURE-PART | S T A R T  -->
+      <span class="signtaure"> designed by | nourhan a.hessin | 2 0 2 5</span>
+      <!-- * SIGNATURE-PART | E N D  -->
+    </main>
+
+    <!-- ^ JS LINKS | -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,273 @@
+/* ~ INDEX-PAGE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (min-width: 360px) {
+  /* * TITLE-PART | */
+  .title div {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 2.8125rem;
+    left: 10%;
+    z-index: 3;
+  }
+}
+
+/* ^ ____________________________________________________ */
+@media screen and (min-width: 576px) {
+  /* * SIGNATURE-PART | */
+  .signtaure {
+    font-size: 0.5rem;
+    right: -20%;
+  }
+}
+
+/* ^ ____________________________________________________ */
+@media screen and (min-width: 768px) {
+  /* * REGISTRATION-PART | */
+  .form-container {
+    display: block;
+  }
+
+  .registration {
+    height: 100vh;
+    border-top: none;
+    border-left: 1px solid var(--main-color);
+    padding: 2.5rem;
+  }
+
+  .registration p {
+    width: 100%;
+  }
+
+  /* ____________________________________________________ */
+  /* * SIGNATURE-PART | */
+  .signtaure {
+    right: -15%;
+  }
+}
+
+/* ^ ____________________________________________________ */
+@media screen and (min-width: 992px) {
+  /* * TITLE-PART | */
+  main.index-page::after {
+    width: 70%;
+    left: 30%;
+  }
+
+  /* ____________________________________________________ */
+  /* * SIGNATURE-PART | */
+  .signtaure {
+    font-size: 0.625rem;
+    right: -13%;
+    bottom: 33%;
+  }
+}
+
+/* ^ ____________________________________________________ */
+@media screen and (min-width: 1200px) {
+  :root {
+    font-size: 1.125rem;
+  }
+
+  /* * TITLE-PART | */
+  main.index-page::before {
+    top: 20%;
+  }
+
+  .title > p {
+    margin-top: 1rem;
+  }
+
+  /* ____________________________________________________ */
+  /* * REGISTRATION-PART | */
+  .registration p {
+    width: 80%;
+  }
+}
+
+/* ^ ____________________________________________________ */
+@media screen and (min-width: 1400px) {
+  :root {
+    font-size: 1.1875rem;
+  }
+
+  /* * TITLE-PART | */
+  main.index-page::before {
+    top: 18%;
+  }
+
+  main.index-page::after {
+    width: 65%;
+    left: 25%;
+  }
+
+  .title ul {
+    margin-bottom: 1.5625rem;
+  }
+
+  .title > p {
+    width: 60%;
+    font-size: 0.9375rem;
+    margin-top: 0rem;
+  }
+
+  /* ____________________________________________________ */
+  /* * SIGNATURE-PART | */
+  .signtaure {
+    font-size: 0.5rem;
+    right: -10%;
+  }
+}
+
+/* ~ WELCOME -PAGE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (min-width: 576px) {
+  /* * WELCOME |  */
+  .welcome h2 {
+    width: 60%;
+  }
+
+  /* ____________________________________________________ */
+  /* * SIGNATURE | */
+  .welcome-page .signtaure {
+    right: -20%;
+  }
+
+  /* ____________________________________________________ */
+  /* * SILDER |  */
+  .silder {
+    top: 105%;
+  }
+
+  .silder i:first-child {
+    top: 5%;
+  }
+}
+
+/* ^ ____________________________________________________ */
+@media screen and (min-width: 768px) {
+  html[data-name="welcome-page"] {
+    font-size: 1.125rem;
+  }
+
+  /* ____________________________________________________ */
+  /* * SILDER |  */
+  .silder {
+    top: 0rem;
+    height: 66.5625rem;
+  }
+
+  .img-container {
+    width: 65%;
+  }
+
+  .silder i:first-child {
+    top: 5%;
+  }
+}
+
+/* ^ ____________________________________________________ */
+@media screen and (min-width: 800px) {
+  /* * SIGNATURE | */
+  .welcome-page .signtaure {
+    right: -15%;
+  }
+}
+
+/* ^ ____________________________________________________ */
+@media screen and (min-width: 992px) {
+  html[data-name="welcome-page"] {
+    font-size: 1.25rem;
+  }
+
+  /* ____________________________________________________ */
+  /* * WELCOME-CONTENT |*/
+  main.welcome-page .container {
+    width: 90%;
+  }
+
+  .welcom-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .welcome-title h1 {
+    font-size: 1.25rem;
+    padding-top: 3.125rem;
+  }
+
+  /* ____________________________________________________ */
+  /* * WELCOME-CONTENT |*/
+  .img-info {
+    padding: 0.625rem;
+  }
+
+  .img-info h2 {
+    font-size: 0.8125rem;
+  }
+
+  .img-info h3 {
+    font-size: 0.5625rem;
+  }
+
+  .img-info p {
+    font-size: 0.625rem;
+  }
+
+  /* ____________________________________________________ */
+  /* * WELCOME |  */
+  .welcome {
+    height: 100vh;
+    border-left: 1px solid var(--main-color);
+    border-bottom: none;
+    margin-top: 0rem;
+  }
+
+  .welcome h2 {
+    width: 100%;
+  }
+
+  .welcome h2 span {
+    font-size: 0.8125rem;
+  }
+
+  .welcome p {
+    font-size: 0.625rem;
+  }
+
+  /* ____________________________________________________ */
+  /* * SILDER |  */
+  .silder {
+    height: 100%;
+  }
+
+  .img-container {
+    width: 45%;
+  }
+}
+
+/* ^ ____________________________________________________ */
+@media screen and (min-width: 1200px) {
+  /* * SIGNATURE | */
+  .welcome-page .signtaure {
+    right: -12%;
+  }
+}
+
+/* ^ ____________________________________________________ */
+@media screen and (min-width: 1400px) {
+  html[data-name="welcome-page"] {
+    font-size: 1.4375rem;
+  }
+
+  /* ____________________________________________________ */
+  /* * SIGNATURE | */
+  .welcome-page .signtaure {
+    right: -11%;
+    font-size: 0.4375rem;
+  }
+
+  /* ____________________________________________________ */
+  /* * SILDER |  */
+  .img-container {
+    width: 32%;
+  }
+}
